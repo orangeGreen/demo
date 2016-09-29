@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>login</title>
+<link rel="stylesheet" href="/stylesheets/flower.css" type="text/css"/>
+</head>
+<body>
+<script type="text/javascript" src="/javascripts/flower.js"></script>
+<div class="alert alert-success alert-dismissable" id="result" style="display: none;">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+        &times;
+    </button>
+    <span></span>
+</div>
+<div id="login1">
+<img src="/images/login_home.gif" width="428px" heigth="262px" alt="l_home" />
+<!--  <from  action="/login" method="get">
+<input  type="text"  name="tuser">
+<input  type="password"  name="pass" >
+ <lable id="l_remember"><input class="remember" type="checkbox" value="Remmember me"/>&nbsp;Remember me</lable> 
+<input class="login2" type="submit"  value="LOG IN" />
+</from>  -->
+ <form  name="formLogin" method="post" action="/login">
+<p>
+    <label></label><input id="l_user" type="text"  placeholder="USERNAME" name="tuser"/>
+</p>
+<p>
+    <label></label><input id="l_pass" type="password" placeholder="PASSWORD" name="tpass" />
+</p>
+<p>
+<lable id="l_remember"><input class="remember" type="checkbox" value="Remmember me"/>&nbsp;Remember me</lable>
+<input  class="login2" type="submit" value="LOGIN" onclick="a()"/> 
+</p>
+</form>
+<div id="l_back"><a href="/register"><img src="/images/plus.gif" width="30" height="30" alt="plus" title="click to register"/></a></div>
+</div>
+</body>
+</html>
